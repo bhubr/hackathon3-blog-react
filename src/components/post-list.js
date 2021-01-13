@@ -5,7 +5,7 @@ import PostSummary from './post-summary';
 function PostList() {
   const [posts, setPosts] = useState(null)
   useEffect(() => {
-    axios.get('http://my-json-server.typicode.com/bhubr/hackathon3-fake-api/posts')
+    axios.get('https://my-json-server.typicode.com/bhubr/hackathon3-fake-api/posts')
       .then(res => setPosts(res.data))
   })
   return (

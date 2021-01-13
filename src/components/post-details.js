@@ -7,7 +7,7 @@ function PostDetails() {
   const { slug } = useParams();
 
   useEffect(() => {
-    const baseUrl = 'http://my-json-server.typicode.com/bhubr/hackathon3-fake-api/posts';
+    const baseUrl = 'https://my-json-server.typicode.com/bhubr/hackathon3-fake-api/posts';
     axios.get(`${baseUrl}/${slug}`)
       .then(res => setPost(res.data))
   })
