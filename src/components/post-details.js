@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 
 function PostDetails() {
@@ -18,7 +18,8 @@ function PostDetails() {
   return (
     <article className="PostDetails">
       <h1>{post.title}</h1>
-      <div>{post.content}</div>
+      <p>{post.content}</p>
+      <Link to="/">Retour à l'accueil</Link>
     </article>
   );
 }
