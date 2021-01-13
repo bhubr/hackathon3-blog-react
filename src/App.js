@@ -1,9 +1,16 @@
+import { Switch, Route } from 'react-router-dom';
+import Home from './components/home';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Blog React avec optimisations SEO</h1>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+      </Switch>
+
     </div>
   );
 }
