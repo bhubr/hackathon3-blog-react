@@ -1,5 +1,6 @@
 import { Switch, Route } from 'react-router-dom';
 import Home from './components/home';
+import PostDetails from './components/post-details';
 import './App.css';
 
 function App() {
@@ -9,8 +10,10 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
+        <Route path="/:slug">
+          <PostDetails />
+        </Route>
       </Switch>
-
     </div>
   );
 }
