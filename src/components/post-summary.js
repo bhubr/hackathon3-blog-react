@@ -8,7 +8,7 @@ function PostSummary({ post }) {
       <h2>{title}</h2>
       <div>{content.substr(0, 40)}&hellip;</div>
       <Link
-        to={`/${id}`}
+        to={`/post/${id}`}
       >
         Read more
       </Link>

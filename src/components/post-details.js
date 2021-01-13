@@ -11,6 +11,9 @@ function PostDetails() {
     const baseUrl = 'https://my-json-server.typicode.com/bhubr/hackathon3-fake-api/posts';
     axios.get(`${baseUrl}/${slug}`)
       .then(res => setPost(res.data))
+      .catch(err => {
+        console.error(err);
+      })
   }, [slug])
 
   if (!post) {
