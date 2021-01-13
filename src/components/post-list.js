@@ -7,7 +7,7 @@ function PostList() {
   useEffect(() => {
     axios.get('https://my-json-server.typicode.com/bhubr/hackathon3-fake-api/posts')
       .then(res => setPosts(res.data))
-  })
+  }, [])
   return (
     <section className="PostList">
       {posts && posts.map(post => (
